@@ -1,6 +1,6 @@
 {
-  "name": "parrot-boilerplate",
-  "description": "Basic scaffold for create a parrot module.",
+  "name": "parrot-module-storage",
+  "description": "Storage Management for Parrot",
   "version": "0.12.14",
   "authors": [
     "Kiko Beats <josefrancisco.verdu@gmail.com>"
@@ -12,9 +12,9 @@
     "test",
     "tests"
   ],
-  "homepage": "https://github.com/parrotjs/parrot-boilerplate",
+  "homepage": "https://github.com/parrotjs/parrot-module-storage",
   "keywords": [],
   "license": "MIT",
-  "main": "dist/parrot-boilerplate.js",
-  "repository": "parrotjs/parrot-boilerplate"
+  "main": "dist/parrot.storage.js",
+  "repository": "parrotjs/parrot-module-storage"
 }
