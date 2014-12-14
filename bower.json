@@ -1,0 +1,20 @@
+{
+  "name": "parrot-boilerplate",
+  "description": "Basic scaffold for create a parrot module.",
+  "version": "0.12.14",
+  "authors": [
+    "Kiko Beats <josefrancisco.verdu@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/parrotjs/parrot-boilerplate",
+  "keywords": [],
+  "license": "MIT",
+  "main": "dist/parrot-boilerplate.js",
+  "repository": "parrotjs/parrot-boilerplate"
+}
