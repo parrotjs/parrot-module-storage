@@ -1,7 +1,7 @@
 {
   "name": "parrot-boilerplate",
-  "description": "Storage Management for Parrot",
-  "version": "0.12.14",
+  "description": "Provides a uniformly API for manage localStorage and SessionStorage.",
+  "version": "0.12.16",
   "author": {
     "name": "Kiko Beats",
     "email": "josefrancisco.verdu@gmail.com",

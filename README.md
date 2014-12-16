@@ -1,15 +1,130 @@
-# parrot-boilerplate
+# Parrot Storage <a href="http://bower.io/search/?q=parrot-module-storage"><img src="http://benschwarz.github.io/bower-badges/badge@2x.png" width="130" height="30"></a>
 
-> Basic scaffold for create a parrot module.
+[![Dependency status](http://img.shields.io/david/parrotjs/Parrotjs.svg?style=flat)](https://david-dm.org/parrotjs/Parrotjs)
+[![Dev Dependencies Status](http://img.shields.io/david/dev/parrotjs/Parrotjs.svg?style=flat)](https://david-dm.org/parrotjs/Parrotjs#info=devDependencies)
+[![Gittip](http://img.shields.io/gittip/Kikobeats.svg?style=flat)](https://www.gittip.com/Kikobeats/)
+
+> Provides a uniformly API for manage localStorage and SessionStorage.
+
+## Browser Compatibility
+
+[![browser support](https://ci.testling.com/parrotjs/parrot-module-storage.png)
+](https://ci.testling.com/parrotjs/parrot-module-storage)
 
 ## Install
 
-Just clone this repository and start a new parrot module
-
 ```bash
-git clone https://github.com/parrotjs/parrot-boilerplate
+bower install parrot-module-storage --save
+```
+
+## Get Started
+
+This module is a little interface for using the same pattern in `localStorage` and `sessionStorage`. Both of them have different namespaces: `parrot.local` and `parrot.session`. However, both methods are the same.
+
+Remember that the only difference between `localStorage` and `sessionStorage` is the lifetime of the information in the browser. `localStorage` is persistent and is deleted only when you clean it. `sessionStorage` is only for the session (for example, if you close and open the tab, it disappears).
+
+## Documentation
+
+### parrot.local
+
+This namespace manage `localStorage`.
+
+#### .add(&lt;key&gt;, &lt;value&gt;)
+
+It stores something in `session` or `local` storage, depending on the namespace that you use.
+
+```coffee
+parrot.local.add('foo', 'bar')
+```
+
+and the key is available in the namespace:
+
+```coffee
+parrot.local.foo()
+# => 'bar'
+```
+
+You can also store objects:
+
+```coffee
+object = foo:'bar'
+parrot.local.add('myObject', object)
+# => 'bar'
+```
+
+And the object is directly available in the namespace:
+
+```coffee
+parrot.local.myObject()
+# => {foo: 'bar'}
+```
+
+#### .remove(&lt;String...&gt;)
+
+It removes the key and the value from the `local` or `session` storage:
+
+```coffee
+parrot.local.remove 'one'
+parrot.local.one()
+# => undefined
+```
+
+Note that you can delete different keys in one sentence:
+
+```coffee
+parrot.local.remove 'one', 'foo'
+```
+
+#### .removeAll()
+
+It removes all the elements from tal` or `session` storage:
+
+```coffee
+parrot.local.removeAll()
+parrot.session.removeAll()
+```
+
+#### .size()
+
+It returns the length of the `local` or `session` storage:
+
+```coffee
+parrot.local.size()
+# => 0
+parrot.session.size()
+# => 8
+```
+
+#### .isAvailable(&lt;key&gt;)
+
+It returns if a certain value is available in the `local` or `session` storage:
+
+```coffee
+parrot.local.isAvailable 'foo'
+# => false
+parrot.local.isAvailable 'bar'
+# => true
+```
+
+### parrot.session
+
+`parrot.session` has special helpers to make easier to save and retrieve the session. It's similar to the standard actions, but it lets you to write less code for doing the same.
+
+If you don't provide a key in the `parrot.session`, the default key is `session`. For instance, if you want to store in a session an object, just write:
+
+```coffee
+parrot.session.add(user)
+```
+
+It is automatically associated with the key `session`. If you need to `get`, `remove` or check if it `isAvailable`, write the command without parameters and it will be resolved with `session` key:
+
+```coffee
+parrot.session.get()
+parrot.session.remove()
+parrot.session.isAvailable()
+# => false
 ```
 
 ## License
 
-MIT © ParrotJS
+MIT © parrotjs
