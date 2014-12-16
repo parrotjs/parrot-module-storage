@@ -1,15 +1,14 @@
 # Parrot Storage <a href="http://bower.io/search/?q=parrot-module-storage"><img src="http://benschwarz.github.io/bower-badges/badge@2x.png" width="130" height="30"></a>
 
-[![Dependency status](http://img.shields.io/david/parrotjs/Parrotjs.svg?style=flat)](https://david-dm.org/parrotjs/Parrotjs)
-[![Dev Dependencies Status](http://img.shields.io/david/dev/parrotjs/Parrotjs.svg?style=flat)](https://david-dm.org/parrotjs/Parrotjs#info=devDependencies)
+[![Dependency status](http://img.shields.io/david/parrotjs/Parrotjs.svg?style=flat)](https://david-dm.org/parrotjs/parrot-module-storage)
+[![Dev Dependencies Status](http://img.shields.io/david/dev/parrotjs/Parrotjs.svg?style=flat)](https://david-dm.org/parrotjs/parrot-module-storage#info=devDependencies)
 [![Gittip](http://img.shields.io/gittip/Kikobeats.svg?style=flat)](https://www.gittip.com/Kikobeats/)
 
 > Provides a uniformly API for manage localStorage and SessionStorage.
 
 ## Browser Compatibility
 
-[![browser support](https://ci.testling.com/parrotjs/parrot-module-storage.png)
-](https://ci.testling.com/parrotjs/parrot-module-storage)
+[![browser support](https://ci.testling.com/parrotjs/parrot-module-storage.png)](https://ci.testling.com/parrotjs/parrot-module-storage)
 
 ## Install
 
