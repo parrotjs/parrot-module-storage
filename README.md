@@ -127,4 +127,4 @@ parrot.session.isAvailable()
 
 ## License
 
-MIT © parrotjs
+MIT © ParrotJS
