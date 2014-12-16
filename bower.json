@@ -5,6 +5,10 @@
   "authors": [
     "Kiko Beats <josefrancisco.verdu@gmail.com>"
   ],
+  "devDependencies": {
+    "parrotjs": "*"
+  },
+  "homepage": "https://github.com/parrotjs/parrot-module-storage",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -12,12 +16,8 @@
     "test",
     "tests"
   ],
-  "homepage": "https://github.com/parrotjs/parrot-module-storage",
   "keywords": [],
   "license": "MIT",
   "main": "dist/parrot.storage.js",
-  "repository": "parrotjs/parrot-module-storage",
-  "devDependencies": {
-    "parrotjs": "*"
-  }
+  "repository": "parrotjs/parrot-module-storage"
 }
