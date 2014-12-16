@@ -25,7 +25,15 @@
     "node": "*"
   },
   "homepage": "https://github.com/parrotjs/parrot-module-storage",
-  "keywords": [],
+  "keywords": [
+    "parrot",
+    "module",
+    "storage",
+    "session",
+    "persistent",
+    "localStorage",
+    "sessionStorage"
+  ],
   "license": "MIT",
   "main": "./index.js",
   "repository": "parrotjs/parrot-module-storage"

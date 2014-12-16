@@ -16,7 +16,15 @@
     "test",
     "tests"
   ],
-  "keywords": [],
+  "keywords": [
+    "parrot",
+    "module",
+    "storage",
+    "session",
+    "persistent",
+    "localStorage",
+    "sessionStorage"
+  ],
   "license": "MIT",
   "main": "dist/parrot.storage.js",
   "repository": "parrotjs/parrot-module-storage"
