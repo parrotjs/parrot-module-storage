@@ -21,6 +21,9 @@ path =
     standard : 'parrot.storage.js'
     dist     : 'dist'
 
+  dependency:
+    partial : 'components/fn-partial/dist/fn-partial.js'
+
   test:
     src   : 'test/source/test.storage.coffee'
     dist  : 'test/dist'
@@ -47,7 +50,7 @@ gulp.task 'develop', ->
   return
 
 gulp.task 'standard', ->
-  gulp.src "#{path.core.dist}/#{path.core.debug}"
+  gulp.src [path.dependency.partial, "#{path.core.dist}/#{path.core.debug}"]
   .pipe concat path.core.standard
   .pipe uglify()
   .pipe header banner, pkg: pkg

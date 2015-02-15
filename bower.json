@@ -1,7 +1,7 @@
 {
   "name": "parrot-module-storage",
   "description": "Provides a uniformly API for manage localStorage and SessionStorage.",
-  "version": "0.12.16",
+  "version": "1.0.0",
   "authors": [
     "Kiko Beats <josefrancisco.verdu@gmail.com>"
   ],
@@ -27,5 +27,8 @@
   ],
   "license": "MIT",
   "main": "dist/parrot.storage.js",
-  "repository": "parrotjs/parrot-module-storage"
+  "repository": "parrotjs/parrot-module-storage",
+  "dependencies": {
+    "fn-partial": "*"
+  }
 }
